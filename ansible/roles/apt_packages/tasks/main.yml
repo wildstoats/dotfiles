@@ -1,0 +1,5 @@
+---
+- name: apt packages
+  apt:
+    pkg:
+    - net-tools

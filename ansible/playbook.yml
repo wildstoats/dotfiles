@@ -1,0 +1,10 @@
+---
+- name: apt packages
+  hosts: apt_packages
+  roles:
+    - { role: apt_packages, become: yes, tags: ['apt_packages'] }
+
+- name: keeagent
+  hosts: keeagent
+  roles:
+    - { role: keeagent, tags: ['keeagent'] }

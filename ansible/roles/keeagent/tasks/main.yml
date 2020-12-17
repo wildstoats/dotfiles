@@ -1,0 +1,11 @@
+---
+- name: apt packages
+  apt:
+    pkg:
+    - socat
+
+- name: deploy ~/bashrc.d/00-keeagent.sh
+  template:
+    src: ./~/.bashrc.d/00-keeagent.sh.j2
+    dest: ~/.bashrc.d/00-keeagent.sh
+    mode: '0640'

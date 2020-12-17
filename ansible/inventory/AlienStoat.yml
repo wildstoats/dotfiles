@@ -1,0 +1,10 @@
+all:
+  hosts:
+    AlienStoat
+  children:
+    apt_packages:
+      hosts:
+        AlienStoat
+    keeagent:
+      hosts:
+        AlienStoat
