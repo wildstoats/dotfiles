@@ -27,6 +27,10 @@ Inventory files correspond to the development environment being provisioned.
 
 Installs aptitude packages.
 
+### asdf
+
+Installs asdf plugins.
+
 ### keeagent
 
 Sets up communication between WSL2 and KeeAgent using socat.

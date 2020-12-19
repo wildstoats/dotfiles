@@ -8,3 +8,8 @@
   hosts: keeagent
   roles:
     - { role: keeagent, tags: ['keeagent'] }
+
+- name: asdf
+  hosts: asdf
+  roles:
+    - { role: markosamuli.asdf, tags: ['asdf'] }

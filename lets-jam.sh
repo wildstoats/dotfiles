@@ -63,6 +63,11 @@ pip install ansible
 ansible --version
 
 # 
+# Install Ansible roles from Galaxy
+# 
+ansible-galaxy install markosamuli.asdf
+
+# 
 # Run Ansible provisioning
 # 
 ansible-playbook \

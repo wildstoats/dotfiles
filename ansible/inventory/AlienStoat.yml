@@ -5,6 +5,9 @@ all:
     apt_packages:
       hosts:
         AlienStoat
+    asdf:
+      hosts:
+        AlienStoat
     keeagent:
       hosts:
         AlienStoat

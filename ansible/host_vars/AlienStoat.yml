@@ -1,1 +1,7 @@
 ---
+# Configure shell rc files
+asdf_init_shell: false
+asdf_plugins:
+  - name: "nodejs"
+    versions:
+      - "15.4.0"
