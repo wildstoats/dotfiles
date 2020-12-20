@@ -5,6 +5,9 @@ all:
     apt_packages:
       hosts:
         AlienStoat
+    nodejs_gpg:
+      hosts:
+        AlienStoat
     asdf:
       hosts:
         AlienStoat
