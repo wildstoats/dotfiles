@@ -2,4 +2,7 @@
 - name: apt packages
   apt:
     pkg:
-    - net-tools
+      - net-tools
+      - dirmngr
+      - gpg
+      - curl

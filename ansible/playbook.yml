@@ -9,6 +9,11 @@
   roles:
     - { role: keeagent, tags: ['keeagent'] }
 
+- name: nodejs_gpg
+  hosts: nodejs_gpg
+  roles:
+    - { role: nodejs_gpg, tags: ['nodejs_gpg'] }
+
 - name: asdf
   hosts: asdf
   roles:
