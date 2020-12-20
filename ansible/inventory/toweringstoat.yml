@@ -1,0 +1,16 @@
+all:
+  hosts:
+    toweringstoat
+  children:
+    apt_packages:
+      hosts:
+        toweringstoat
+    nodejs_gpg:
+      hosts:
+        toweringstoat
+    asdf:
+      hosts:
+        toweringstoat
+    keeagent:
+      hosts:
+        toweringstoat
