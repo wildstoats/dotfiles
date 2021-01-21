@@ -1,8 +1,12 @@
 ---
-- name: apt packages
+- name: common apt packages
   apt:
-    pkg:
+    name:
       - net-tools
       - dirmngr
       - gpg
       - curl
+
+- name: host-specific apt packages
+  apt:
+    name: "{{ apt_packages }}"
