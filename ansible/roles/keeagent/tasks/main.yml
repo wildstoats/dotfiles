@@ -3,6 +3,7 @@
   apt:
     pkg:
     - socat
+  become: yes
 
 - name: deploy ~/bashrc.d/00-keeagent.sh
   template:
