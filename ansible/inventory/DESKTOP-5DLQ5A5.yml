@@ -1,0 +1,16 @@
+all:
+  hosts:
+    DESKTOP-5DLQ5A5
+  children:
+    apt_packages:
+      hosts:
+        DESKTOP-5DLQ5A5
+    nodejs_gpg:
+      hosts:
+        DESKTOP-5DLQ5A5
+    asdf:
+      hosts:
+        DESKTOP-5DLQ5A5
+    keeagent:
+      hosts:
+        DESKTOP-5DLQ5A5
