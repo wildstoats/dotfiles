@@ -2,6 +2,9 @@ all:
   hosts:
     toweringstoat
   children:
+    apt_repositories:
+      hosts:
+        toweringstoat
     apt_packages:
       hosts:
         toweringstoat

@@ -2,6 +2,9 @@ all:
   hosts:
     DESKTOP-5DLQ5A5
   children:
+    apt_repositories:
+      hosts:
+        DESKTOP-5DLQ5A5
     apt_packages:
       hosts:
         DESKTOP-5DLQ5A5
