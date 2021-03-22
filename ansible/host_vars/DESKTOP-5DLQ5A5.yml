@@ -1,1 +1,17 @@
 ---
+# Configure shell rc files
+asdf_init_shell: false
+asdf_plugins:
+  - name: "python"
+    versions:
+      - "3.8.8"
+  - name: "nodejs"
+    versions:
+      - "14.8.0"
+# role: apt_repositories
+# apt_repositories:
+#   - repo: "ppa:ansible/ansible"
+# role: apt_packages
+apt_packages:
+  - postgresql-client-12
+  - libpq-dev
