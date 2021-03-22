@@ -1,6 +1,6 @@
 ---
 - name: common apt packages
-  apt:
+  ansible.builtin.apt:
     name:
       - net-tools
       - dirmngr
@@ -8,5 +8,6 @@
       - curl
 
 - name: host-specific apt packages
-  apt:
+  ansible.builtin.apt:
     name: "{{ apt_packages }}"
+    update_cache: yes
