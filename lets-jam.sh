@@ -8,6 +8,7 @@ set -e
 
 DEBIAN_FRONTEND=noninteractive
 BASHRC_D=~/.bashrc.d
+ASDF_VERSION=v0.8.1
 
 # 
 # Configure ~/.bashrc to source additional files
@@ -28,7 +29,7 @@ sudo apt-get install -y \
   git
 # Install asdf
 if [ ! -d ~/.asdf ]; then
-  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch "$ASDF_VERSION"
 fi
 # Source asdf and asdf completions
 cp bootstrap/00-asdf.sh "$BASHRC_D/00-asdf.sh"
