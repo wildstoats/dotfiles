@@ -1,0 +1,10 @@
+---
+- name: required apt packages
+  apt:
+    name:
+      - python3-apt
+
+- name: host-specific apt repositories
+  ansible.builtin.apt_repository:
+    repo: "{{ item.repo }}"
+  loop: "{{ apt_repositories }}"

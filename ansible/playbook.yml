@@ -1,4 +1,9 @@
 ---
+- name: apt repositories
+  hosts: apt_repositories
+  roles:
+    - { role: apt_repositories, become: yes, tags: ['apt_repositories'] }
+
 - name: apt packages
   hosts: apt_packages
   roles:

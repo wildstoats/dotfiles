@@ -2,6 +2,9 @@ all:
   hosts:
     AlienStoat
   children:
+    apt_repositories:
+      hosts:
+        AlienStoat
     apt_packages:
       hosts:
         AlienStoat
