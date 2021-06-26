@@ -3,6 +3,18 @@
   apt:
     pkg:
     - socat
+  become: yes
+
+- name: create directory for npiperelay.exe
+  ansible.builtin.file:
+    path: /mnt/c/Programs/npiperelay
+    state: directory
+    mode: '0755'
+
+- name: copy npiperelay.exe
+  ansible.builtin.copy:
+    src: mnt/c/programs/npiperelay/npiperelay.exe
+    dest: /mnt/c/Programs/npiperelay/npiperelay.exe
 
 - name: deploy ~/bashrc.d/00-keeagent.sh
   template:
