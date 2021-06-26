@@ -15,7 +15,8 @@ ASDF_VERSION=v0.8.1
 # 
 grep -qxF "for f in $BASHRC_D/*.sh; do source \$f; done" ~/.bashrc || printf "for f in $BASHRC_D/*.sh; do source \$f; done\n\n" >> ~/.bashrc
 mkdir -p "$BASHRC_D"
-touch "$BASHRC_D/.fnord.sh"
+# Add a no-op script in case we end up not including any.  Without this sourcing ~/.bashrc.d from .bashrc breaks down
+touch "$BASHRC_D/fnord.sh"
 
 # Update aptitude packages
 sudo apt-get update
