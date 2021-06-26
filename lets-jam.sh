@@ -59,8 +59,11 @@ asdf reshim python
 # 
 # Setup python venv for Ansible
 # 
+rm -rf venv
 python -m venv venv
 source venv/bin/activate
+pip install --upgrade pip
+pip install wheel
 pip install ansible
 ansible --version
 
