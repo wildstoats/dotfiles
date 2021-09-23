@@ -1,11 +1,6 @@
 ---
 # Configure shell rc files
 asdf_init_shell: false
-asdf_plugins:
-  - name: "nodejs"
-    versions:
-      - "14.15.3"
-      - "15.4.0"
 # role: apt_packages
 apt_packages:
   - libpq-dev
